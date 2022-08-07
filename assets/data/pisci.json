@@ -1,0 +1,18 @@
+[
+    {
+        "id": 1,
+        "ime": "Ivo",
+        "prezime": "Andrić"
+    },
+    {
+        "id": 2,
+        "ime": "Fjodor",
+        "prezime": "Dostojevski"
+    },
+    {
+        "id": 3,
+        "ime": "Haruki",
+        "prezime": "Murakami"
+    }
+
+]

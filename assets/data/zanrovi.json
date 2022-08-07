@@ -1,0 +1,15 @@
+[
+    {
+        "id": 1,
+        "naziv": "Drama"
+    },
+    {
+        "id": 2,
+        "naziv": "Misterija"
+    },
+    {
+        "id": 3,
+        "naziv": "Fikcija"
+    }
+
+]

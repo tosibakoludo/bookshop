@@ -1,0 +1,37 @@
+*!
+ * Start Bootstrap - Shop Homepage (https://startbootstrap.com/template/shop-homepage)
+ * Copyright 2013-2020 Start Bootstrap
+ * Licensed under MIT (https://github.com/StartBootstrap/startbootstrap-shop-homepage/blob/master/LICENSE)
+ */
+body {
+  padding-top: 56px;
+}
+
+.card {
+	overflow-x: hidden;
+}
+
+.card img { 
+  height: 200px;
+  width: auto !important;
+  display: block;
+  margin: 0 auto;
+}
+
+.card img.img-fluid {
+  height: 500px;
+}
+
+body > .container {
+  min-height: 100vh;
+}
+
+.carousel-item{
+  height: 500px;
+  overflow-y: hidden;
+}
+
+.carousel-item img{
+  width: 100%;
+  transform: translateY(-175px);
+}

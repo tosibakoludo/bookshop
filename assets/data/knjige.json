@@ -1,0 +1,137 @@
+[
+    {
+        "id": 1,
+        "naslov": "Na Drini Ćuprija",
+        "pisacID" : 1,
+        "zanrovi" : [1, 2],
+        "price": {
+			"staraCena": "150",
+			"novaCena": "89"
+        },
+        "naStanju": true,
+        "slika": {
+			"src": "knjiga1.jpg",
+			"alt": "Na Drini Ćuprija"
+		}
+    },
+    {
+        "id": 2,
+        "naslov": "Prokleta Avlija",
+        "pisacID" : 1,
+        "zanrovi" : [1, 3],
+        "price": {
+			"staraCena": "210",
+			"novaCena": "70"
+        },
+        "naStanju": true,
+        "slika": {
+			"src": "knjiga2.jpg",
+			"alt": "Prokleta Avlija"
+		}
+    },
+    {
+        "id": 3,
+        "naslov": "Gospođica",
+        "pisacID" : 1,
+        "zanrovi" : [1, 2],
+        "price": {
+			"staraCena": "100",
+			"novaCena": "89"
+        },
+        "naStanju": false,
+        "slika": {
+			"src": "knjiga3.jpg",
+			"alt": "Gospođica"
+		}
+    },
+   {
+        "id": 4,
+        "naslov": "Znakovi pored puta",
+        "pisacID" : 1,
+        "zanrovi" : [1, 2],
+        "price": {
+			"staraCena": "100",
+			"novaCena": "89"
+        },
+        "naStanju": true,
+        "slika": {
+			"src": "knjiga4.jpg",
+			"alt": "Znakovi pored puta"
+		}
+    },
+    {
+        "id": 5,
+        "naslov": "Braća Karamazovi",
+        "pisacID" : 2,
+        "zanrovi" : [1, 2],
+        "price": {
+			"staraCena": "1000",
+			"novaCena": "500"
+        },
+        "naStanju": true,
+        "slika": {
+			"src": "knjiga5.jpg",
+			"alt": "Braća Karamazovi"
+		}
+    },
+    {
+        "id": 6,
+        "naslov": "Zločin i kazna",
+        "pisacID" : 2,
+        "zanrovi" : [1],
+        "price": {
+			"staraCena": "300",
+			"novaCena": "200"
+        },
+        "naStanju": true,
+        "slika": {
+			"src": "knjiga6.jpg",
+			"alt": "Zločin i kazna"
+		}
+    },
+    {
+        "id": 7,
+        "naslov": "1Q84",
+        "pisacID" : 3,
+        "zanrovi" : [1, 2],
+        "price": {
+			"staraCena": "500",
+			"novaCena": "450"
+        },
+        "naStanju": true,
+        "slika": {
+			"src": "knjiga7.jpg",
+			"alt": "1Q84"
+		}
+    },
+    {
+        "id": 8,
+        "naslov": "Sputnik ljubav",
+        "pisacID" : 3,
+        "zanrovi" : [1, 2],
+        "price": {
+			"staraCena": "100",
+			"novaCena": "89"
+        },
+        "naStanju": true,
+        "slika": {
+			"src": "knjiga8.jpg",
+			"alt": "Sputnik ljubav"
+		}
+    },
+    {
+        "id": 9,
+        "naslov": "Igraj, igraj, igraj",
+        "pisacID" : 3,
+        "zanrovi" : [1, 2, 3],
+        "price": {
+			"staraCena": "1000",
+			"novaCena": "890"
+        },
+        "naStanju": true,
+        "slika": {
+			"src": "knjiga9.jpg",
+			"alt": "Igraj, igraj, igraj"
+		}
+    }
+]

@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
+  <meta name="description" content="Website for an online shop." />
+  <meta name="keywords" content="shop, online, products" />
+
+  <title>Bookshop - Home</title>
+
+  <!-- Bootstrap core CSS -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+
+  <!-- Custom styles for this template -->
+  <link href="assets/css/style.css" rel="stylesheet" />
+
+</head>
+
+<body>
+
+  <!-- Navigation -->
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark fixed-top">
+    <div class="container">
+      <a class="navbar-brand" href="#"><h1 class="h3">Bookshop</h1></a>
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarResponsive">
+        <ul class="navbar-nav ml-auto" id="menu">
+          <li class="nav-item">
+            <a class="nav-link" href="index.html">Home</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="products.html">Products</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="contact.html">Contact</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Page Content -->
+  <div class="container min-vh-100">
+
+    <div class="row">
+
+      <div class="col-lg-12">
+
+        <div id="carouselExampleIndicators" class="carousel slide my-4" data-ride="carousel">
+          <ol class="carousel-indicators">
+            <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
+            <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
+          </ol>
+          <!--SLIDER-->
+          <div class="carousel-inner" role="listbox" id="slider">
+            <div class="carousel-item active">
+              <img class="d-block img-fluid" src="assets/img/first.jpg" alt="First">
+            </div>
+            <div class="carousel-item active">
+              <img class="d-block img-fluid" src="assets/img/second.jpeg" alt="Second">
+            </div>
+            <div class="carousel-item active">
+              <img class="d-block img-fluid" src="assets/img/third.jpg" alt="Third">
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="sr-only">Previous</span>
+          </a>
+          <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="sr-only">Next</span>
+          </a>
+        </div>
+        <div class="row">
+        <div class="col-lg-3">
+		<select class="custom-select" id="sort">
+			<option value="asc" selected>Low to high</option>
+			<option value="desc">High to low</option>
+		</select>
+		<br/>
+    <br/>
+      <ul class="list-group">
+        <li class="list-group-item">
+          <input type="search" id="pretraga" name="pretraga" placeholder="Pretrazi naslov..."/>
+        </li>
+      </ul>
+      <br/>
+		  <!--ZANROVI-->
+		  <ul class="list-group" id="zanrovi">
+				<li class="list-group-item">
+                   <input type="checkbox" value="1" class="zanr" name="zanrovi"/> Zanr 1
+                </li>
+            </ul>
+		<br/>
+          <!--PISCI-->
+            <ul class="list-group" id="pisci">
+				<li class="list-group-item">
+                   <input type="checkbox" value="1" class="pisac" name="pisci"/> Pisac 1
+                </li>
+            </ul>
+            <br/>
+            <ul class="list-group" id="naStanju">
+              <li class="list-group-item">
+                <input type="radio" value="dostupno" checked class="stanje" name="stanje" id="btnNaStanju"/>Trenutno dostupne
+               <br/><br/>
+                <input type="radio" value="nedostupno" class="stanje" name="stanje" id="btnNijeNaStanju"/>Trenutno nedostupne
+             </li>
+         </ul>
+            </ul>
+  
+        </div>
+        <div class="col-lg-9">
+        <div class="row" id="knjige">
+          
+        </div>
+        <!-- /.row -->
+        </div>
+</div>
+      </div>
+      <!-- /.col-lg-9 -->
+
+    </div>
+    <!-- /.row -->
+
+  </div>
+  <!-- /.container -->
+
+  <!-- Footer -->
+  <footer class="py-5 bg-dark">
+    <div class="container">
+      <p class="m-0 text-center text-white">Copyright &copy; Shop 2021</p>
+    </div>
+    <!-- /.container -->
+  </footer>
+
+  <!-- Bootstrap core JavaScript -->
+  <script src="assets/vendor/jquery/jquery.min.js"></script>
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/js/main.js"></script>
+
+</body>
+
+</html>
