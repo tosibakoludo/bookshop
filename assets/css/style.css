@@ -35,3 +35,11 @@ body > .container {
   width: 100%;
   transform: translateY(-175px);
 }
+
+.list-group-item > .badge {
+  float: none;
+}
+
+.list-group-item > .glyphicon {
+  float: right;
+}
