@@ -349,7 +349,7 @@ function checkCart() {
         let niz = JSON.parse(cookieCart.split("=")[1]);
         niz.forEach(elem => {
             cenaUk += elem.cena * elem.quantity;
-            ispis += `<li class="list-group-item">${elem.book} ($${elem.cena * elem.quantity}) <span class="badge badge-primary">${elem.quantity}</span><span data-book="${elem.book}" class="glyphicon glyphicon-remove"></span></li>`;
+            ispis += `<li class="list-group-item">${elem.book} ($${elem.cena * elem.quantity}) <span class="badge badge-primary">${elem.quantity}</span><span><input type="number" class="cart-quantity-input" min="1" value="${elem.quantity}" data-book="${elem.book}"></span><span data-book="${elem.book}" class="glyphicon glyphicon-remove"></span></li>`;
         });
         ispis += `<li class="list-group-item">Remove all ($${cenaUk}) <span data-book="all" class="glyphicon glyphicon-remove"></span></li></ul>`;
         korpa.innerHTML = ispis;
@@ -359,6 +359,10 @@ function checkCart() {
 
     document.querySelectorAll(".list-group-item .glyphicon.glyphicon-remove").forEach(elem => {
         elem.addEventListener("click", removeFromChart);
+    })
+
+    document.querySelectorAll('.cart-quantity-input').forEach(elem => {
+        elem.addEventListener("change", azurirajQuantity);
     })
 }
 
@@ -377,6 +381,30 @@ function removeFromChart() {
         }
 
         cart = cart.filter(elem => elem.book != naslov);
+    }
+
+    setCookie("cart", JSON.stringify(cart), 5);
+
+    checkCart();
+}
+
+function azurirajQuantity() {
+    console.log("na dobrom si putu");
+
+    // let id = this.dataset.id;
+    let naslov = this.dataset.book;
+    // console.log(naslov);
+    let cart = [];
+
+    const cookieCart = document.cookie.split("; ").find(row => row.startsWith("cart="));
+
+    if (cookieCart) {
+        cart = JSON.parse(cookieCart.split("=")[1]);
+    }
+
+    if (cart.some(elem => elem.book == naslov)) {
+        console.log(this.value);
+        cart.find(elem => elem.book == naslov).quantity = this.value;
     }
 
     setCookie("cart", JSON.stringify(cart), 5);
